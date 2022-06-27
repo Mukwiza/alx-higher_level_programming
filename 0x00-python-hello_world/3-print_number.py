@@ -1,3 +1,3 @@
 #!/usr/bin/bash
-f"{98} Battery street"
-
+number = 98
+f"{} Battery street".format(number)
