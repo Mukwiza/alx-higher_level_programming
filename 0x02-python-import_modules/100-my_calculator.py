@@ -6,18 +6,16 @@ if __name__ = "__main__":
     a = int(sys.argv[1])
     b = int(sys.argv[3])
     operator = sys.argv[2]
-    if n < 3:
+    if n != 3:
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
         sys.exit(1)
-    elif operator:
-        match (operator):
-            case '+':
+    elif operator == '+':
                 print("{} + {} = {}".format(a, b, add(a, b)))
-            case '-':
+    elif operator == '-':
                 print("{} - {} = {}".format(a, b, sub(a, b)))
-            case '*':
+    elif operator == '*':
                 print("{} * {} = {}".format(a, b, mul(a, b)))
-            case '/':
+    elif operator == '/':
                 print("{} / {} = {}".format(a, b, div(a, b)))
     else:
         print('Unknown operator. Available operators: +, -, * and /')
