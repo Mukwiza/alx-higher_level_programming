@@ -9,10 +9,9 @@ def add_tuple(tuple_a=(), tuple_b=()):
 def fix_tuple(tuple_=()):
     if len(tuple_) < 2:
         if len(tuple_) == 1:
-            tuple_ = (tuple_[0],0)
+            tuple_ = (tuple_[0], 0)
         elif len(tuple_) == 0:
-            tuple_ = (0,0)
+            tuple_ = (0, 0)
     if len(tuple_) > 2:
         tuple_ = (tuple_[0], tuple_[1])
     return tuple_
-
