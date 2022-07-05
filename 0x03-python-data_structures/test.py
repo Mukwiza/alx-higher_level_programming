@@ -1,4 +1,12 @@
 #!/usr/bin/python3
-a = __import__('5-no_c').no_c
+a = __import__('6-print_matrix_integer').print_matrix_integer
 
-print(a("best school is Cool"))
+matrix = [
+        [1,2,3],
+        [4,5,6],
+        [7,8,9]
+]
+
+a(matrix)
+print("--")
+a()
