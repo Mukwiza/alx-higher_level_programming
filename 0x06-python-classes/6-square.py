@@ -6,20 +6,17 @@ class Square:
     """Represent a square."""
 
     def __init__(self, size=0, position=(0, 0)):
-        """Initialize a new Square.
+        """Initialize a new square.
         Args:
             size (int): The size of the new square.
-        Initialize a new Square position
-        Args:
-            position(int, int): The position of the new square
+            position (int, int): The position of the new square.
         """
-        self.__size = size
-        self.__position = position
-
+        self.size = size
+        self.position = position
 
     @property
     def size(self):
-        "retrieve/set the size of a Square"
+        """Get/set the current size of the square."""
         return (self.__size)
 
     @size.setter
@@ -32,8 +29,8 @@ class Square:
 
     @property
     def position(self):
-        "get/set the position of a Square."""
-        return self.__position
+        """Get/set the current position of the square."""
+        return (self.__position)
 
     @position.setter
     def position(self, value):
@@ -44,27 +41,18 @@ class Square:
             raise TypeError("position must be a tuple of 2 positive integers")
         self.__position = value
 
+    def area(self):
+        """Return the current area of the square."""
+        return (self.__size * self.__size)
+
     def my_print(self):
-        """Printing '#' charater corresponding to square size."""
-        if self.size == 0:
-            print()
+        """Print the square with the # character."""
+        if self.__size == 0:
+            print("")
+            return
 
         [print("") for i in range(0, self.__position[1])]
-            
-        i = 0
-        while i < self.size:
-            x = 0
-            while x < self.position[0]:
-                print(" ",end="")
-                x += 1
-            a = 0
-            while a < self.size:
-                print("#", end="")
-                a += 1
-            print()
-            i += 1
-
-    def area(self):
-        """Return the current square area."""
-
-        return self.__size ** 2
+        for i in range(0, self.__size):
+            [print(" ", end="") for j in range(0, self.__position[0])]
+            [print("#", end="") for k in range(0, self.__size)]
+            print("")
