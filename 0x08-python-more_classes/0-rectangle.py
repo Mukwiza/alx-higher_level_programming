@@ -7,4 +7,3 @@ class Rectangle:
     Create an empty Rectangle object
     """
     pass
-
