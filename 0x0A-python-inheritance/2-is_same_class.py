@@ -1,4 +1,4 @@
-#!/usr/bin/pyhton3
+#!/usr/bin/pyhthon3
 """
 function that returns true if object is class instance
 """
