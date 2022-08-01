@@ -6,6 +6,4 @@
 class BaseGeometry:
     """Represents BaseGeometry class.
     """
-
-
     pass
