@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Defines a subclass-checking function.
+"""module: 4-inherits_from
 """
 
 
