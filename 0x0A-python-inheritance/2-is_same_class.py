@@ -1,14 +1,14 @@
 #!/usr/bin/pyhton3
 """
-object is class instance or not
+function that returns true if object is class instance
 """
 
 
-def is_same_class(0bj, a_class):
+def is_same_class(obj, a_class):
     """
-    True if the object is an instance class otherwise False
+    function: is_same_class
+    return True if object is instance of a class
     """
     if isinstance(obj, a_class):
-        return True
-    else:
-        return False
+        if obj.__class__ == a_class:
+            return True
