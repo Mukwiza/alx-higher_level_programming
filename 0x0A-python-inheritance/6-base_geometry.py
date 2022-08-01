@@ -9,5 +9,6 @@ class BaseGeometry:
 
 
     def area(self):
-        """Raises an Exception"""
+        """Raises an Exception
+        """
         raise Exception ("area() is not implemented")
