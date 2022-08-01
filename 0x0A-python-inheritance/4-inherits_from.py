@@ -7,7 +7,7 @@ def inherits_from(obj, a_class):
     """function: inherits_from.
     Args:
         obj: an object to check.
-        a_class: a subclass.
+        a_class: a class.
     Returns:
         bool
     """
