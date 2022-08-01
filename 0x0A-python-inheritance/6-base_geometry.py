@@ -7,7 +7,6 @@ class BaseGeometry:
     """Represents BaseGeometry class.
     """
 
-
     def area(self):
         """Not implemented.
         """
