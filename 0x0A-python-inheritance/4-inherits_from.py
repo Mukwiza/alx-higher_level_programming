@@ -8,8 +8,6 @@ def inherits_from(obj, a_class):
         obj: an object to check.
         a_class: a class.
     Returns:
-        bool.
+        None.
     """
-    if type(obj) != a_class and isinstance(obj, a_class):
-            return True
-    return False
+    return type(obj) != a_class and isinstance(obj, a_class)
