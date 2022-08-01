@@ -7,12 +7,6 @@ class BaseGeometry:
     """Represents BaseGeometry class.
     """
 
-    def __init__(self, name=None, value=None):
-        """Initialize data.
-        """
-        self.name = name
-        self.value = value
-
     def area(self):
         """Not implemented.
         """
@@ -20,8 +14,10 @@ class BaseGeometry:
 
     def integer_validator(self, name, value):
         """Value validation.
+        Args:
+            name (str): name of parameter
+            value (int): parameter to validate.
         """
-        BaseGeometry.__init__(self, name, value)
 
         if not isinstance(value, int):
             raise TypeError("{} must be an integer".format(self.name))
