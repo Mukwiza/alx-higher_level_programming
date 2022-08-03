@@ -3,9 +3,9 @@
 
 
 def write_file(filename="", text=""):
-    """write a string to text file and prints it to stdout.
+    """write a string to text file and return number of characters.
     Args:
-        filename = name of a file
+        filename = name of a file.
         text = a string to write in text file.
     Return:
         number of characters written.
