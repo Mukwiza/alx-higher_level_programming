@@ -7,4 +7,4 @@ def append_write(filename="", text=""):
     """append a string to text.
     """
     with open(filename, 'a') as f:
-        return f.append(text)
+        return f.write(text)
