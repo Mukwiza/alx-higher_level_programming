@@ -4,19 +4,10 @@ from models.base import Base
 
 
 class Rectangle(Base):
-    '''Defining rectangle class 
-    inherits from :
-        Base.
+    '''Defining rectangle class inherits from base.
     '''
 
     def __init__(self, width, height, x=0, y=0, id=None):
-        '''Assign each argument width, height, x and y to the right attribute.
-        Args:
-            width: width of rectangle.
-            height: height of rectagle.
-            x: number.
-            y: number.
-        '''
         self.__width = width
         self.__height = height
         self.__x = x
