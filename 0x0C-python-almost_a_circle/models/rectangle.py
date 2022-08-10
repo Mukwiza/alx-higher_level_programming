@@ -69,4 +69,4 @@ class Rectangle(Base):
         """y setter
         """
         self.check_type_value('y', y, True)
-        self.__y =
+        self.__y = y
