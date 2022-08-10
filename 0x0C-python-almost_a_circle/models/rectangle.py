@@ -16,7 +16,7 @@ class Rectangle(Base):
 
     @property
     def width(self):
-        '''Returning private attribute.'''
+        '''returning private attribute.'''
 
         return self.__width
 
@@ -28,7 +28,7 @@ class Rectangle(Base):
 
     @property
     def height(self):
-        '''Returning private attribute.'''
+        '''returning private attribute.'''
         return self.__height
 
     @height.setter
@@ -39,7 +39,7 @@ class Rectangle(Base):
 
     @property
     def x(self):
-        '''Returning private attribute.'''
+        '''returning private attribute.'''
         return self.__x
 
     @x.setter
@@ -50,7 +50,7 @@ class Rectangle(Base):
 
     @property
     def y(self):
-        '''Returning private attribute.'''
+        '''returning private attribute.'''
         return self.__y
 
     @y.setter
