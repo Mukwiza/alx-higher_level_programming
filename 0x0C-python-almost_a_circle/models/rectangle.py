@@ -1,72 +1,95 @@
 #!/usr/bin/python3
-"""
-This module implements a Rectangle object
-"""
+"""First Rectangle"""
+
 from models.base import Base
 
 
 class Rectangle(Base):
-    """Rectangle implementation
+    """A rectangle class that inherits from
+    the base class
+    Args:
+        Base(model): the inherited model
     """
 
-    def __init__(self, width: int, height: int, x=0, y=0, id=None):
-        """initialization
+    def __init__(self, width, height, x=0, y=0, id=None):
+        """Constructs the rectange's attributes
+        Args:
+            height(int): rectangle's height
+            width(int): rectangle's width
+            x(int): input value
+            y(int): input value
         """
         super().__init__(id)
-
         self.width = width
         self.height = height
         self.x = x
         self.y = y
 
     @property
-    def width(self) -> int:
-        """width getter
-        """
+    def width(self):
+        """Gets the Width of the rectangle"""
         return self.__width
 
     @width.setter
-    def width(self, width: int):
-        """width setter
+    def width(self, value):
+        """Sets the Width (private) of the rectangle
+        Args:
+            value(int): value of the rectangle
         """
-        self.check_type_value('width', width)
-        self.__width = width
+        if type(value) != int:
+            raise TypeError("width must be an integer")
+        if value <= 0:
+            raise ValueError("width must be >= 0")
+        self.__width = value
 
     @property
-    def height(self) -> int:
-        """height getter
-        """
+    def height(self):
+        """Gets the height (private) of the rectangle"""
         return self.__height
 
-    @height.setter
-    def height(self, height: int):
-        """height setter
+    @width.setter
+    def height(self, value):
+        """Sets the height(private) of the rectangle
+          Args:
+            value(int): value of the rectangle
         """
-        self.check_type_value('height', height)
-        self.__height = height
+        if type(value) not in [int]:
+            raise TypeError("height must be an integer")
+        if value <= 0:
+            raise ValueError("height must be >= 0")
+        self.__height = value
 
     @property
-    def x(self) -> int:
-        """x getter
-        """
+    def x(self):
+        """Gets the x value"""
         return self.__x
 
     @x.setter
-    def x(self, x: int):
-        """x setter
+    def x(self, value):
+        """Sets x value
+         Args:
+            value(int): x value
         """
-        self.check_type_value('x', x, True)
-        self.__x = x
+        if type(value) != int:
+            raise TypeError("x must be an integer")
+        if value < 0:
+            raise ValueError("x must be >= 0")
+        self.__x = value
 
     @property
-    def y(self) -> int:
-        """y getter
-        """
+    def y(self):
+        """Gets the x value"""
         return self.__y
 
     @y.setter
-    def y(self, y: int):
-        """y setter
+    def y(self, value):
+        """Sets y value
+         Args:
+            value(int): y value
         """
-        self.check_type_value('y', y, True)
-        self.__y = y
+        if type(value) not in [int]:
+            raise TypeError("y must be an integer")
+        if value < 0:
+            raise ValueError("y must be >= 0")
+        self.__y = value
+
