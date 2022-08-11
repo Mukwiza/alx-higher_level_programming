@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """First Rectangle"""
+
 from models.base import Base
 
 
@@ -19,10 +20,10 @@ class Rectangle(Base):
             y(int): input value
         """
         super().__init__(id)
-        self.__width = width
-        self.__height = height
-        self.__x = x
-        self.__y = y
+        self.width = width
+        self.height = height
+        self.x = x
+        self.y = y
 
     @property
     def width(self):
@@ -58,7 +59,7 @@ class Rectangle(Base):
           Args:
             value(int): value of the rectangle
         """
-        if type(value) not in [int]:
+        if type(value) != int:
             raise TypeError("height must be an integer")
         if value <= 0:
             raise ValueError("height must be >= 0")
@@ -98,7 +99,7 @@ class Rectangle(Base):
          Args:
             value(int): y value
         """
-        if type(value) not in [int]:
+        if type(value) != int:
             raise TypeError("y must be an integer")
         if value < 0:
             raise ValueError("y must be >= 0")
