@@ -93,5 +93,7 @@ class Rectangle(Base):
             print()
 
     def __str__(self):
-        '''retuns a string'''
-        return ('[Rectangle]  ({}) {}/{} - {}/{}'.format(self.id, self.x, self.y, self.width, self.height))
+        '''Returns:
+                string.
+        '''
+        return '[Rectangle]  ({}) {}/{} - {}/{}'.format(self.id, self.x, self.y, self.width, self.height)
