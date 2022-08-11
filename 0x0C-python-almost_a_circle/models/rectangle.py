@@ -85,5 +85,5 @@ class Rectangle(Base):
             while x < self.width:
                 print('#', end='')
                 x += 1
-            print()
             i += 1
+            print()
