@@ -4,7 +4,7 @@ from models.base import Base
 
 
 class Rectangle(Base):
-    """A rectangle class that inherits from.
+    """rectangle class that inherits from.
     the base class
     Args:
         Base(model): the inherited model
@@ -19,10 +19,10 @@ class Rectangle(Base):
             y(int): input value
         """
         super().__init__(id)
-        self.width = width
-        self.height = height
-        self.x = x
-        self.y = y
+        self.__width = width
+        self.__height = height
+        self.__x = x
+        self.__y = y
 
     @property
     def width(self):
