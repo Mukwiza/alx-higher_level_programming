@@ -83,7 +83,7 @@ class Rectangle(Base):
             i(int): variable
             x(int): variable
         '''
-        i= 0
+        i = 0
         while i < self.height:
             x = 0
             while x < self.width:
