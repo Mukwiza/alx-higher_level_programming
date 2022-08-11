@@ -8,22 +8,22 @@ from models.base import Base
 class Rectangle(Base):
     """rectangle class that inherits from the base class
     Args:
-        Base(model): the inherited model
+        Base (model): the inherited model
     """
 
     def __init__(self, width, height, x=0, y=0, id=None):
         """constructs the rectange's attributes.
         Args:
-            height(int): rectangle's height
-            width(int): rectangle's width
-            x(int): input value
-            y(int): input value
+            height (int): rectangle's height
+            width (int): rectangle's width
+            x (int): input value
+            y (int): input value
         """
         super().__init__(id)
-        self.width = width
-        self.height = height
-        self.x = x
-        self.y = y
+        self.__width = width
+        self.__height = height
+        self.__x = x
+        self.__y = y
 
     @property
     def width(self):
@@ -37,7 +37,7 @@ class Rectangle(Base):
     def width(self, value):
         """sets the Width  of the rectangle
         Args:
-            value(int): value of the rectangle
+            value (int): value of the rectangle
         """
         if type(value) != int:
             raise TypeError("width must be an integer")
@@ -57,7 +57,7 @@ class Rectangle(Base):
     def height(self, value):
         """sets the height of the rectangle
           Args:
-            value(int): value of the rectangle
+            value (int): value of the rectangle
         """
         if type(value) != int:
             raise TypeError("height must be an integer")
@@ -77,7 +77,7 @@ class Rectangle(Base):
     def x(self, value):
         """sets x value
          Args:
-            value(int): x value
+            value (int): x value
         """
         if type(value) != int:
             raise TypeError("x must be an integer")
@@ -97,7 +97,7 @@ class Rectangle(Base):
     def y(self, value):
         """sets y value
          Args:
-            value(int): y value
+            value (int): y value
         """
         if type(value) != int:
             raise TypeError("y must be an integer")
