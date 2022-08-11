@@ -20,10 +20,10 @@ class Rectangle(Base):
             y(int): input value
         """
         super().__init__(id)
-        self.width -> width
-        self.height -> height
-        self.x -> x
-        self.y -> y
+        self.width = width
+        self.height = height
+        self.x = x
+        self.y = y
 
     @property
     def width(self):
@@ -34,16 +34,16 @@ class Rectangle(Base):
         return self.__width
 
     @width.setter
-    def width(self, value):
+    def width(self, width):
         """sets the Width  of the rectangle
         Args:
             value(int): value of the rectangle
         """
-        if type(value) != int:
+        if type(width) != int:
             raise TypeError("width must be an integer")
-        if value <= 0:
+        if width <= 0:
             raise ValueError("width must be >= 0")
-        self.__width = value
+        self.__width = width
 
     @property
     def height(self):
