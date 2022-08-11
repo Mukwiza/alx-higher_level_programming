@@ -87,3 +87,4 @@ class Rectangle(Base):
                 x += 1
             i += 1
             print()
+        print()
