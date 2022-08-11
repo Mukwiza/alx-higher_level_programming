@@ -5,14 +5,14 @@ from models.base import Base
 
 
 class Rectangle(Base):
-    """A rectangle class that inherits from
+    """A rectangle class that inherits from.
     the base class
     Args:
         Base(model): the inherited model
     """
 
     def __init__(self, width, height, x=0, y=0, id=None):
-        """Constructs the rectange's attributes
+        """constructs the rectange's attributes.
         Args:
             height(int): rectangle's height
             width(int): rectangle's width
@@ -27,7 +27,10 @@ class Rectangle(Base):
 
     @property
     def width(self):
-        """Gets the Width of the rectangle"""
+        """gets the Width of the rectangle.
+        Returns:
+            width (int): value of width
+        """
         return self.__width
 
     @width.setter
@@ -44,12 +47,15 @@ class Rectangle(Base):
 
     @property
     def height(self):
-        """Gets the height (private) of the rectangle"""
+        """gets the height (private) of the rectangle
+        Returns:
+            height (int): value fo height
+        """
         return self.__height
 
     @width.setter
     def height(self, value):
-        """Sets the height(private) of the rectangle
+        """sets the height(private) of the rectangle
           Args:
             value(int): value of the rectangle
         """
@@ -61,12 +67,15 @@ class Rectangle(Base):
 
     @property
     def x(self):
-        """Gets the x value"""
+        """gets the x value
+        Returns:
+            x (int): value of x
+        """
         return self.__x
 
     @x.setter
     def x(self, value):
-        """Sets x value
+        """sets x value
          Args:
             value(int): x value
         """
@@ -78,12 +87,15 @@ class Rectangle(Base):
 
     @property
     def y(self):
-        """Gets the x value"""
+        """gets the y value
+        Returns:
+            y (int): value of y
+        """
         return self.__y
 
     @y.setter
     def y(self, value):
-        """Sets y value
+        """sets y value
          Args:
             value(int): y value
         """
