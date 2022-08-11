@@ -20,10 +20,10 @@ class Rectangle(Base):
             y(int): input value
         """
         super().__init__(id)
-        self.width = width
-        self.height = height
-        self.x = x
-        self.y = y
+        self.width -> width
+        self.height -> height
+        self.x -> x
+        self.y -> y
 
     @property
     def width(self):
