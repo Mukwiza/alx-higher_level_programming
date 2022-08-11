@@ -78,7 +78,11 @@ class Rectangle(Base):
         return (self.height*self.width)
 
     def display(self):
-        '''print rectangle instance in stdout'''
+        '''print rectangle instance in stdout
+        fields:
+            i(int): variable
+            x(int): variable
+        '''
         i= 0
         while i < self.height:
             x = 0
@@ -87,4 +91,3 @@ class Rectangle(Base):
                 x += 1
             i += 1
             print()
-        print()
