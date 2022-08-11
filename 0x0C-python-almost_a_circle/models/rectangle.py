@@ -1,13 +1,12 @@
 #!/usr/bin/python3
-"""First Rectangle"""
+"""First rectangle class"""
 
 
 from models.base import Base
 
 
 class Rectangle(Base):
-    """rectangle class that inherits from.
-    the base class
+    """rectangle class that inherits from the base class
     Args:
         Base(model): the inherited model
     """
