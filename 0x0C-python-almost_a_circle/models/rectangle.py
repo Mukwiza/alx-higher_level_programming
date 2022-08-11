@@ -83,9 +83,13 @@ class Rectangle(Base):
             i(int): variable
             x(int): variable
         '''
+        for y in range(self.y):
+           print()
         i = 0
         while i < self.height:
             x = 0
+            for space in range(self.x):
+                print(' ', end='')
             while x < self.width:
                 print('#', end='')
                 x += 1
