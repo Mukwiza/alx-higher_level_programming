@@ -35,7 +35,7 @@ class Rectangle(Base):
 
     @width.setter
     def width(self, value):
-        """sets the Width (private) of the rectangle
+        """sets the Width  of the rectangle
         Args:
             value(int): value of the rectangle
         """
@@ -47,7 +47,7 @@ class Rectangle(Base):
 
     @property
     def height(self):
-        """gets the height (private) of the rectangle
+        """gets the height of the rectangle
         Returns:
             height (int): value fo height
         """
@@ -55,7 +55,7 @@ class Rectangle(Base):
 
     @width.setter
     def height(self, value):
-        """sets the height(private) of the rectangle
+        """sets the height of the rectangle
           Args:
             value(int): value of the rectangle
         """
