@@ -23,7 +23,10 @@ class Base:
         '''returns the JSON string representation of dictionaries.
         Args:
             list_dictionaries (dict): a list of dictionaries.
+        Returs:
+            json string representation
         '''
         if list_dictionaries is None:
-            return str(list_dictionaries)
-        return json.dumps(list_dictionaries)
+            return "[]"
+        else:
+            return json.dumps(list_dictionaries)
