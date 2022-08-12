@@ -50,7 +50,7 @@ class Square(Rectangle):
                 if i == 0:
                     self.id = l
                 elif i == 1:
-                    self.size = l
+                    self.width = l
                 elif i == 2:
                     self.x = l
                 elif l == 3:
