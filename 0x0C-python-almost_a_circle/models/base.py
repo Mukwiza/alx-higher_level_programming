@@ -2,6 +2,7 @@
 '''Define base class.'''
 
 import json
+import io
 
 
 class Base:
@@ -33,3 +34,14 @@ class Base:
             return '[]'
         else:
             return json.dumps(list_dictionaries)
+
+    @classmethod
+    def save_to_file(cls, list_objs):
+        '''writes the json string representation of list_objs to a file'''
+        new_l = []
+        if list_objs is not None:
+            for i in list_objs:
+                new_l.append(cls.to_dictionary(i))
+        filename = cls.__name__ + '.json'
+        with open(filename, 'w') as f:
+            f.write(cls.to_json_string(new_l))
