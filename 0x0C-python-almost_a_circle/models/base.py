@@ -25,5 +25,5 @@ class Base:
             list_dictionaries (dict): a list of dictionaries.
         '''
         if list_dictionaries is None:
-            return list_dictionaries
+            return str(list_dictionaries)
         return json.dumps(list_dictionaries)
