@@ -26,10 +26,12 @@ class Square(Rectangle):
 
     @property
     def size(self):
+        '''retrieve value'''
         return self.width
 
     @size.setter
     def size(self, value):
+        '''set value of square width and height'''
         if type(value) != int:
             raise TypeError("width must be an integer")
         if value <= 0:
