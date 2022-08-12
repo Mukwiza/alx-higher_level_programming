@@ -49,6 +49,7 @@ class Base:
     def from_json_string(json_string):
         '''returns the list of the json string representation json_string'''
         if json_string is None:
-            return '[]'
+            em = []
+            return em
         else:
             return json.loads(json_string)
