@@ -51,6 +51,7 @@ class Square(Rectangle):
                     self.x = l
                 elif l == 3:
                     self.y = l
-        elif(kwargs):
+
+        if(kwargs):
             for key, value in kwargs.items():
                 setattr(self, key, value)
