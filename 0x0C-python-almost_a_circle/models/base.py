@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 '''Define base class.'''
+
 import json
 
 
@@ -23,7 +24,7 @@ class Base:
     def to_json_string(list_dictionaries):
         '''returns the json string representation of dictionaries.
         Args:
-            list_dictionaries (dict): a list of dictionaries.
+            list_dictionaries : a list of dictionaries.
         Returs:
             json string representation
         '''
