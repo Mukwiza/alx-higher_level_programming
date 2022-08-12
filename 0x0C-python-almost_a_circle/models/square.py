@@ -45,7 +45,7 @@ class Square(Rectangle):
             *args (int): non keyworded arguments
             **kwargs (int): keyworded arguments
         '''
-        if args and len(args) != 0:
+        if (args):
             for i, l in enumerate(args):
                 if i == 0:
                     self.id = l
@@ -56,6 +56,6 @@ class Square(Rectangle):
                 elif l == 3:
                     self.y = l
 
-        if kwargs and len(kwargs) != 0:
+        if (kwargs):
             for key, value in kwargs.items():
                 setattr(self, key, value)
